@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Card from '@material-ui/core/Card';
 import Icon from '@material-ui/core/Icon';
 
 const ProductCard = props => {

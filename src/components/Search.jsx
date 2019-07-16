@@ -4,8 +4,6 @@ import { AppContext } from '../context';
 
 const Search = () => {
 
-    let a = 0;
-
     const [searchResults, setSearchResults] = useState([]);
     const [searchValue, setSearchValue] = useState(null);
     const products = useContext(AppContext).products.map(product => product.title.toLowerCase());

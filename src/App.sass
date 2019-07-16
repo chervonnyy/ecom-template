@@ -1,13 +1,13 @@
 $slide-width: 500px
     
 .header
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    font-size: 20px;
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    align-items: center
+    width: 100%
+    height: 50px
+    text-align: left
+    font-size: 20px
 
     &__cart
         cursor: pointer
@@ -16,100 +16,100 @@ $slide-width: 500px
     position: relative
 
     &__results
-        position: absolute;
-        width: 120px;
-        height: 30px;
+        position: absolute
+        width: 120px
+        height: 30px
     
 .grid, .basket
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 900px;
-    margin: 10px auto;
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    width: 900px
+    margin: 10px auto
 
 .card
-    width: 200px;
-    height: auto;
-    border: 1px solid grey;
-    border-radius: 10px;
+    width: 200px
+    height: auto
+    border: 1px solid grey
+    border-radius: 10px
 
     &__title
-        width: 90%;
-        height: 40px;
-        margin: auto;
-        text-align: center;
-        text-overflow: ellipsis;
+        width: 90%
+        height: 40px
+        margin: auto
+        text-align: center
+        text-overflow: ellipsis
 
     &__price
-        text-align: center;
-        color: orange;
+        text-align: center
+        color: orange
 
     &__cover
-        position: relative;
-        margin: 20px auto 20px;
-        width: 150px;
-        height: 150px;
+        position: relative
+        margin: 20px auto 20px
+        width: 150px
+        height: 150px
         
         img
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 80%;
-            transform: translate(-50%, -50%);
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 80%
+            transform: translate(-50%, -50%)
 
     &__actions
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 150px;
-        height: 30px;
-        margin: 10px auto;
-        cursor: pointer;
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 150px
+        height: 30px
+        margin: 10px auto
+        cursor: pointer
 
     &__action
-        width: 20px;
-        height: 20px;
+        width: 20px
+        height: 20px
 
         &_favorite
-            color: orange;
+            color: orange
 
         &_cart
-            color: blue;
+            color: blue
 
 .slider
     position: relative
-    width: $slide-width;
-    height: 300px;
-    margin: auto;
-    border: 2px solid black;
-    overflow: hidden;
+    width: $slide-width
+    height: 300px
+    margin: auto
+    border: 2px solid black
+    overflow: hidden
 
     &__control
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 2.5em;
-        cursor: pointer;
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 2.5em
+        cursor: pointer
 
         &_prev
-            left: 5px;
+            left: 5px
 
         &_next
-            right: 5px;
+            right: 5px
 
     &__wrapper
-        width: $slide-width * 3;
-        height: 100%;
-        transform: translateX(0px);
-        transition: all .5s;
+        width: $slide-width * 3
+        height: 100%
+        transform: translateX(0px)
+        transition: all .5s
 
     &__slide
-        display: inline-block;
-        width: $slide-width;
-        height: 100%;
+        display: inline-block
+        width: $slide-width
+        height: 100%
 
         &_orange
-            background: orange;
+            background: orange
         &_blue
-            background: blue;
+            background: blue
         &_pink
-            background: pink;
+            background: pink
