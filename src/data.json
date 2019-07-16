@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Microsoft Xbox One S 1Tb White + Mortal Kombat 11",
+            "price": "23 990₽",
+            "cover": "https://223104.selcdn.ru/hc-market-prod/Item/cfd5c1ec59ae4949f4ef406859b5c67e.jpg"
+        }, {
+            "id": 2,
+            "title": "Apple iPhone X 64Gb Space Grey",
+            "price": "65 990₽",
+            "cover": "https://223104.selcdn.ru/hc-market-prod/Item/ea0b1f8e48969619f92fade68ffeb5b9.jpg"
+        }, {
+            "id": 3,
+            "title": "Samsung UE43NU7140U",
+            "price": "36 990₽",
+            "cover": "https://223104.selcdn.ru/hc-market-prod/Item/aa251fddfffcdfcea9879bc219526942.jpg"
+        }, {
+            "id": 4,
+            "title": "Akai Pro MPD26",
+            "price": "20 700₽",
+            "cover": "https://223104.selcdn.ru/hc-market-prod/Item/9fe51d52adcdeb1edce12ae1e1e125d3.png"
+        }
+        
+    ]
+}
