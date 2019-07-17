@@ -103,9 +103,17 @@ $slide-width: 500px
         transition: all .5s
 
     &__slide
+        position: relative;
         display: inline-block
         width: $slide-width
         height: 100%
+
+        span
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 172px;
 
         &_orange
             background: orange

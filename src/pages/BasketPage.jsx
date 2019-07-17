@@ -20,7 +20,7 @@ const BasketPage = () => {
 
             />);
     });
-
+    
     return <div className="basket">{cards}</div>;
 }
 

@@ -25,7 +25,7 @@ const Slider = () => {
     return (
     <div className="slider">
         <div className="slider__wrapper" ref={wrapperRef}>
-            {classes.map((className, index) => <div className={className} key={index}></div>)}
+            {classes.map((className, index) => <div className={className} key={index}><span>{index + 1}</span></div>)}
         </div>
         <div className="slider__control slider__control_prev" onClick={() => move('left')}>
                 <Icon>fast_rewind</Icon>

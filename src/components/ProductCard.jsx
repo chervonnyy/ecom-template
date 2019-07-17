@@ -11,7 +11,6 @@ const ProductCard = props => {
 
     useEffect(() => {
         isAdded = (basket.includes(title)) ? true : false;
-        console.log(title, id, isFavorite, isAdded)
     });
 
     return (
