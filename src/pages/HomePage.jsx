@@ -5,7 +5,7 @@ import Slider from '../components/Slider';
 const HomePage = props => {
         return (
             <div className="homepage">
-                <Slider />
+                {/* <Slider /> */}
                 <Grid />
             </div>
         );

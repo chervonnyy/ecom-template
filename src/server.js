@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const needle = require('needle');
 const cheerio = require('cheerio');
 
@@ -18,5 +20,5 @@ needle('get', url)
         })
         return products;
     })
-    .then((prod) => console.log(prod))
+    .then(data => fs.writeFileSync('./scraped-data.json', JSON.stringify(data)))
     .catch(error => console.error(error))

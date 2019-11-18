@@ -5,14 +5,17 @@ import Header from './components/Header';
 
 import { AppContext } from './context';
 
-import data from './data.json';
+import products from './data/scraped-data.json';
 import './App.sass';
 import 'typeface-roboto';
 
 const App = () => {
 
+    const data = [];
+
     const [basket, setBasket] = useState([]);
 
+    data.products = products;
     data.basket = basket;
     data.setBasket = setBasket;
 
@@ -20,8 +23,8 @@ const App = () => {
 
     return (
         <div id="root">
-            <AppContext.Provider value = {data} >
-                <Header value = {basket} />
+            <AppContext.Provider value={data} >
+                <Header value={basket} />
                 <Main />
             </AppContext.Provider>
         </div>

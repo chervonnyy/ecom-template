@@ -1,16 +1,27 @@
 $slide-width: 500px
+
+// colors
+$primary-color: #daa520
+$white: #f8f7f2
+
+a
+    text-decoration: none;
     
 .header
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr
     align-items: center
     width: 100%
-    height: 50px
+    height: 100px
     text-align: left
     font-size: 20px
+    background: $primary-color
+    color: $white
 
     &__cart
-        cursor: pointer
+        a
+            display: flex
+            cursor: pointer
 
 .search
     position: relative
@@ -31,6 +42,7 @@ $slide-width: 500px
     height: auto
     border: 1px solid grey
     border-radius: 10px
+    margin-top: 20px;
 
     &__title
         width: 90%
@@ -40,6 +52,7 @@ $slide-width: 500px
         text-overflow: ellipsis
 
     &__price
+        font-size: 14px;
         text-align: center
         color: orange
 

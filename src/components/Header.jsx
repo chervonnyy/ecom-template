@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Icon from '@material-ui/core/Icon';
 
 import Search from './Search';
 
@@ -12,9 +13,10 @@ const Header = props => {
             <div>contacts</div>
             <Search />
             <div className="header__cart">
-                <Link to='/basket'>cart
+                <Link to='/basket'>
+                    <Icon>shopping_cart</Icon> 
                     <div className="header__counter">
-                        items in basket: {props.value.length}
+                        {props.value.length}
                     </div>
                 </Link>
             </div>

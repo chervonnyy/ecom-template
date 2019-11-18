@@ -1,27 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Icon from '@material-ui/core/Icon';
 
-const wrapperRef = React.createRef();
-
-const slides = ['orange', 'blue', 'pink'];
-const classes = slides.map(slide => `slider__slide slider__slide_${slide}`);
-
-const slideWidth = 500;
-
-const move = direction => {
-    const currentPosition = parseInt(getComputedStyle(wrapperRef.current).transform.split(', ')[4]);
-    const swing = (direction === 'right') ? -slideWidth : slideWidth;
-    let newPosition = currentPosition + swing;
-
-    if (Math.abs(newPosition) >= slideWidth * slides.length) newPosition = 0;
-    if (newPosition > 0) newPosition = slideWidth * -slides.length + swing;
-
-    wrapperRef.current.style.transform = `translateX(${newPosition}px)`;
-}
-
-setInterval(() => move('right'), 3000);
-
 const Slider = () => {
+
+    const wrapperRef = React.createRef();
+
+    const [position, setPosition] = useState(0);
+
+    const slides = ['orange', 'blue', 'pink'];
+    const classes = slides.map(slide => `slider__slide slider__slide_${slide}`);
+
+    const slideWidth = 500;
+
+    const move = direction => {
+        const currentPosition = parseInt(getComputedStyle(wrapperRef.current).transform.split(', ')[4]);
+        const swing = (direction === 'right') ? -slideWidth : slideWidth;
+        let newPosition = currentPosition + swing;
+
+        if (Math.abs(newPosition) >= slideWidth * slides.length) newPosition = 0;
+        if (newPosition > 0) newPosition = slideWidth * -slides.length + swing;
+
+        wrapperRef.current.style.transform = `translateX(${newPosition}px)`;
+    }
+
+    // const interval = setInterval(() => move('right'), 1000);
+
+    // useEffect(() => {
+    //     clearInterval(interval)
+    // }, []);
+
     return (
     <div className="slider">
         <div className="slider__wrapper" ref={wrapperRef}>
